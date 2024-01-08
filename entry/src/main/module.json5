@@ -1,0 +1,34 @@
+{
+  "module": {
+    "name": "entry",//module名字 《=31字节，应用唯一；打包成hap包后的hap名称
+    "type": "entry",//模块类型3种：entry、feature和har
+    "description": "$string:module_desc",//模块描述
+    "mainElement": "EntryAbility",//hap的入口ability，注意只有配置为mainElement的ability或extension才能暴露
+    "deviceTypes":  ["phone"],//hap可运行设备类型
+    "deliveryWithInstall": true,//当前module安装时是否主动安装 true:安装
+    "installationFree": false,//是否支持免安装。 true:支持
+    "pages": "$profile:main_pages",//对应的main_pages.json文件
+    "abilities": [//ability数组，可以存在多个ability
+    {
+        "name": "EntryAbility",//ability类名，全局唯一
+        "srcEntry": "./ets/entryability/EntryAbility.ts",//ability代码入口
+        "description": "$string:EntryAbility_desc",//描述
+        "icon": "$media:icon",//ability图标，可以省略。若该ability为mainElement则必须设置
+        "label": "$string:EntryAbility_label",//ability的标签名
+        "startWindowIcon" : "$media:icon",//启动页面的图标
+        "startWindowBackground" : "$color:start_window_background",//启动页背景色
+        "exported": true,
+        "skills": [//action集合，可自定义
+          {
+            "entities": [//接收Want的Entity值的集合
+              "entity.system.home"
+            ],
+            "actions": [//接收的Want的Action值的集合,可自定义
+              "action.system.home"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

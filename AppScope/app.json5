@@ -1,0 +1,11 @@
+{
+  "app": {
+    "bundleName": "com.wangyb.demo0830",//应用包名
+
+    "vendor": "个人开发者-王永斌",//应用厂商
+    "versionCode": 1000000,//应用版本
+    "versionName": "1.0.0",//版本号
+    "icon": "$media:app_icon",//应用图标
+    "label": "$string:app_name"//应用名
+  }
+}

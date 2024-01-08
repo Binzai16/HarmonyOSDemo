@@ -1,0 +1,31 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    }
+  ,{
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },{
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "goto_todo_list",
+      "value": "跳转待办列表"
+    },
+    {
+      "name": "todo_list",
+      "value": "待办列表"
+    },
+    {
+      "name": "check_all",
+      "value": "全选"
+    },
+    {
+      "name": "check_call_cancel",
+      "value": "全不选"
+    }
+  ]
+}
